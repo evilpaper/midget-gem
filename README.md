@@ -26,23 +26,20 @@ The application supports the following user stories.
 - Check if the URL leads to a valid page before shortening it
 - Make it harder to shorten URLs that lead to known malicious sites (short URLs are often used by scammers)
 
-## Tech used
+## Built with
 
 ### Backend application
 
-The backend application is built with Node.js. It use:
+The backend application is built with Node.js. The application use:
 
-- TypeScript for type safety.
-- Express as server.
-- Postgres.js as database client. Postgres.js was selected before the more common node-postgres beacause of its simple surface API and dynamic query support.
+- TypeScript for type safety and better tooling.
+- Express.js for setting up a basic server.
+- Postgres.js to connect with a Postgres database. Postgres.js was selected before the more common node-postgres beacause of its simple surface API and dynamic query support.
 - NanoID for generating short URL's.
-
-The backend application is a basic server that exposes endpoints for creating, getting and visiting urls.
-It add a few basic checks for client data validation, connect to the database and implement business logic for each endpoint.
 
 ### Persistent storage
 
-The application use Postgres database for persistent storage.
+The application use a Postgres database for persistent storage.
 
 ### Front-end application
 
@@ -58,11 +55,11 @@ The app will try to reach the back end at `http://localhost:8000`. You can confi
 
 ### Hosting
 
-Production version is deployed on a VPS on [Google Cloud](https://cloud.google.com/free).
+Production version is hosted on [Google Cloud](https://cloud.google.com/free).
 
 ## Credits
 
-Credits to [Maxim Orlov for](https://maximorlov.com/) for providing the frontend and project setting.
+Credits to [Maxim Orlov for](https://maximorlov.com/) for providing the frontend and project setup. Awesome stuff, highly recommend.
 
 ## License
 
