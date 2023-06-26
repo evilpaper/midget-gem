@@ -1,0 +1,15 @@
+# Fronend
+frontend/
+
+# Dependencies
+**/node_modules
+/node_modules
+/node_modules/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.env
+**env
