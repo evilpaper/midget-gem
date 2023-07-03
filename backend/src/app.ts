@@ -16,7 +16,7 @@ const nanoid = customAlphabet(
   5
 );
 
-interface Short {
+interface ShortURL {
   id: string;
   original_url: string;
   visit_count: number;
@@ -36,23 +36,21 @@ app.get("/", (request, response) => {
 app.post("/url", async (request, response) => {
   const { url = "unkown" } = request.body;
 
-  const rows = await sql<
-    Short[]
+  const [shortURL] = await sql<
+    ShortURL[]
   >`SELECT * FROM url WHERE original_url = ${url}`;
 
-  const [row] = rows;
-
-  if (row) {
+  if (shortURL) {
     response.status(200);
     response.json({
-      id: row.id,
-      originalURL: row.original_url,
-      visitCount: row.visit_count,
+      id: shortURL.id,
+      originalURL: shortURL.original_url,
+      visitCount: shortURL.visit_count,
     });
   } else {
     const id = nanoid();
     const add = await sql<
-      Short[]
+      ShortURL[]
     >`INSERT INTO url (id, original_url, visit_count) VALUES
     (${id}, ${url}, 0);`;
     if (add) {
