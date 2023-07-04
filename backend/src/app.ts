@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-// Get call to root, mainly for testing setup. Leave it here.
+// Get call to root, mainly for testing setup.
 app.get("/", (request, response) => {
   response.send("--- Midget Gems ----");
 });
