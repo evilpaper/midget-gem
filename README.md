@@ -37,6 +37,12 @@ The backend application is built with Node.js. The application use:
 - Postgres.js to connect with a Postgres database. Postgres.js was selected before the more common node-postgres beacause of its simple surface API and dynamic query support.
 - NanoID for generating short URL's.
 
+The backend application lives inside the `./backend` folder.
+
+To start the backend application locally, run `npm run backend` from the project root directory `./`.
+
+By default, the backend application will run on port 8000.
+
 ### Persistent storage
 
 The application use a Postgres database for persistent storage.
@@ -47,9 +53,9 @@ The frontend is built by Maxim Orlov. It is not part of the version control.
 
 The front-end application lives inside the `./frontend` folder.
 
-To start the app, run `npm run frontend` from the project root directory `./` and go to `http://localhost:3000` in your browser.
+To start the front-end application locally, run `npm run frontend` from the project root directory `./` and go to `http://localhost:3000` in your browser.
 
-By default, the app will run on port 3000. If you wish to use a different port, change the `PORT=` value inside `./package.json`.
+By default, the front-end applicaton will run on port 3000. If you wish to use a different port, change the `PORT=` value inside `./package.json`.
 
 The app will try to reach the back end at `http://localhost:8000`. You can configure this by changing the `API_URL` variable inside the `./frontend/.env` file.
 
