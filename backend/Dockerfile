@@ -29,7 +29,7 @@ COPY . /app
 RUN npm install
 
 # Expose the port in which application should run.
-EXPOSE 8000
+EXPOSE 8080
 
 # Lets you define the default program that is run once you start the 
 # container based on this image. Each Dockerfile only has one CMD.

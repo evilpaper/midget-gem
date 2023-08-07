@@ -7,7 +7,7 @@ import sql from "./db";
 import { customAlphabet } from "nanoid";
 
 export const app = express();
-export const port = 8000;
+export const port = 8080;
 
 // Use base64 (64 characters) to avoid need to escape characters in short url.
 // Set length to 5 characters.
