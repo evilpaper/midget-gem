@@ -4,8 +4,6 @@
 
 An URL shortener service for your precious links.
 
-You can try it out here: ... link is coming.
-
 ## User stories
 
 The application supports the following user stories.
@@ -41,11 +39,11 @@ The backend application lives inside the `./backend` folder.
 
 To start the backend application locally, run `npm run backend` from the project root directory `./`.
 
-By default, the backend application will run on port 8000.
+By default, the backend application will run on port 8080.
 
 ### Persistent storage
 
-The application use a Postgres database for persistent storage.
+The application use a Postgres database for persistent storage and Postgres.js to connect db with the backend.
 
 ### Front-end application
 
@@ -58,10 +56,6 @@ To start the front-end application locally, run `npm run frontend` from the proj
 By default, the front-end applicaton will run on port 3000. If you wish to use a different port, change the `PORT=` value inside `./package.json`.
 
 The app will try to reach the back end at `http://localhost:8000`. You can configure this by changing the `API_URL` variable inside the `./frontend/.env` file.
-
-### Hosting
-
-Production version is hosted on [Google Cloud](https://cloud.google.com/free).
 
 ## Credits
 
