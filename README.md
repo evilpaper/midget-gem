@@ -1,6 +1,6 @@
 # Midget Gems
 
-<img src="https://www.cooperscandy.com/upload/prod/22457.png" align="right" alt="Midget Gems Logo" width="228" height="200" style="padding: 2rem;">
+<img src="https://www.cooperscandy.com/upload/prod/22457.png" alt="Midget Gems Logo" width="228" height="200" style="padding: 2rem;">
 
 An URL shortener service for your precious links.
 
